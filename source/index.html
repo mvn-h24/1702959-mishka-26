@@ -5,16 +5,17 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <h1>Студия вязания "Мишка".</h1>
+    <h1 class="document-access-label">Студия вязания "Мишка".</h1>
     <header class="page-header">
       <a class="page-header__logo logo">
-        <span class="visually-hidden">Студия вязания "Мишка", промо.</span>
+        <span class="logo__access-label">Студия вязания "Мишка", промо.</span>
       </a>
-      <nav class="page-header__navigation">
+      <nav class="page-header__navigation navigation">
+        <h2 class="navigation__access-label">Студия вязания для пользователя.</h2>
         <label class="navigation__call-menu-key call-menu-key" for="main-nav__toggle">
-          <span class="visually-hidden">Клиентские разделы, открыть.</span>
+          <span class="call-menu-key__access-label">Пользовательское меню, открыть.</span>
+          <input class="call-menu-key__input" id="main-nav__toggle" type="checkbox">
         </label>
-        <input class="visually-hidden" id="main-nav__toggle" type="checkbox">
         <ul class="navigation__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__heading-link heading-link" href="#">Каталог товаров</a>
@@ -23,23 +24,25 @@
             <a class="main-nav__heading-link heading-link" href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__heading-link heading-link" href="#">Поиск по сайту</a>
+            <a class="main-nav__heading-link heading-link heading-link--search" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__heading-link heading-link" href="#">Корзина: пока пуста</a>
+            <a class="main-nav__heading-link heading-link heading-link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
       <span class="page-header__subject">Милые штуки ручной работы для дома</span>
-      <ul class="catalog-nav">
+      <ul class="page-header__catalog-nav catalog-nav">
         <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Предметы интерьера</a></li>
         <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Детские игрушки</a></li>
       </ul>
     </header>
     <main class="page-content">
-      <section class="popular-product section-waved">
-        <h3 class="popular-product__name">Вязаные корзинки</h3>
-        <h2 class="popular-product__tagline">ТОВАР НЕДЕЛИ</h2>
+      <section class="page-content__popular-product popular-product popular-product--wavedblock">
+        <div class="popular-product__heading-wrapper">
+          <h2 class="popular-product__tagline">Товар недели</h2>
+          <h3 class="popular-product__name">Вязаные корзинки</h3>
+        </div>
         <span class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</span>
         <dl class="popular-product__feature-list feature-list">
           <div class="feature-list__feature-item feature-item">
@@ -58,9 +61,9 @@
         <img class="popular-product__preview" alt="Пример вязанных корзинок." src="./img/products/1-basket-preview.jpg" width="260" height="315">
         <span class="popular-product__price">Цена: 990 руб.</span>
         <a class="popular-product__order outline-btn" href="#">Заказать</a>
-      </section><button></button>
-      <section class="about-us">
-        <h2 class="about-us__header">Коротко о нас:</h2>
+      </section>
+      <section class="page-content__about-us about-us">
+        <h2 class="about-us__header">Коротко о нас</h2>
         <ul class="about-us__features-list">
           <li class="about-us__feature-item">Экологически чистые материалы</li>
           <li class="about-us__feature-item">Скандинавский стиль по российской цене</li>
@@ -70,9 +73,9 @@
           <li class="about-us__feature-item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="about-feedback section-waved">
-        <h2 class="about-us__header">Отзывы</h2>
-        <ul class="about-us__feedback-list feedback-list">
+      <section class="page-content__feedback feedback feedback--wavedblock">
+        <h2 class="feedback__header">Отзывы</h2>
+        <ul class="feedback__feedback-list feedback-list">
           <li class="feedback-list__feedback-item feedback-item">
             <span class="feedback-item__message">
               Я молодая мама, но всё равно фотографии не
@@ -86,37 +89,38 @@
             <span class="feedback-item__contact">@misssssiskras</span>
           </li>
         </ul>
-        <div class="feedback-list__slide-control">
-          <button class="slide-control__prev"><span class="visually-hidden">Предыдущий отзыв.</span></button>
-          <button class="slide-control__next"><span class="visually-hidden">Следующией отзыв.</span></button>
+        <div class="feedback__slide-control slide-control">
+          <button class="slide-control__prev"><span class="slide-control__access-label">Предыдущий отзыв.</span></button>
+          <button class="slide-control__next"><span class="slide-control__access-label">Следующий отзыв.</span></button>
         </div>
-        <a class="about-us__write-excerpt outline-btn" href="#">Написать</a>
+        <a class="feedback__section-action-key outline-btn" href="#">Написать</a>
       </section>
-      <section class="contacts">
-        <dl class="contacts-list">
-          <div class="contacts-list__item">
-            <dt class="contacts-list__way">e-mail:</dt>
-            <dd class="contacts-list__way-value">info@mimimishkashop.ru</dd>
+      <section class="page-content__contacts contacts">
+        <h2 class="contacts__header">Контакты</h2>
+        <dl class="contacts__info-list">
+          <div class="contacts__info-item">
+            <dt class="contacts__info-variant">e-mail:</dt>
+            <dd class="contacts__info-variant-value">info@mimimishkashop.ru</dd>
           </div>
-          <div class="contacts-list__item">
-            <dt class="contacts-list__way">адрес:</dt>
-            <dd class="contacts-list__way-value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+          <div class="contacts__info-item">
+            <dt class="contacts__info-variant">адрес:</dt>
+            <dd class="contacts__info-variant-value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
           </div>
         </dl>
         <address class="contacts__address">
-          <img src="./img/content/contact-map__plcaehoder.png" alt="Расположение студии на карте.">
+          <img class="contacts__address-placeholder" alt="Расположение студии на карте." src="./img/content/contact-map__plcaehoder.png">
         </address>
-        <a class="contacts__write-excerpt outline-btn" href="#">Напишите нам</a>
+        <a class="contacts__section-action-key outline-btn" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="social-icons-list">
-        <li class="social-icons-list__item"><a class="social-icons-list__link"><span class="visually-hidden">vk.</span></a></li>
-        <li class="social-icons-list__item"><a class="social-icons-list__link"><span class="visually-hidden">youtube.</span></a></li>
-        <li class="social-icons-list__item"><a class="social-icons-list__link"><span class="visually-hidden">telegram</span></a></li>
+      <ul class="page-footer__social-icons-list social-icons-list">
+        <li class="social-icons-list__link"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">vk.</span></a></li>
+        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">youtube.</span></a></li>
+        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">telegram.</span></a></li>
       </ul>
-      <a class="vendor-link__heading-link heading-link">
-        Разработано <span class="visually-hidden">htmlacademy.</span>
+      <a class="page-footer__heading-link heading-link heading-link--htmlacademy">
+        Разработано <span class="heading-link__vendor heading-link__access-label">htmlacademy.</span>
       </a>
     </footer>
   </body>

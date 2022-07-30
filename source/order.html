@@ -34,7 +34,52 @@
       <span class="page-header__subject">Вязание на заказ</span>
       <span class="page-header__subject-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</span>
     </header>
-
+    <main class="page-content">
+      <form class="order-form">
+        <fieldset class="order-form__field">
+          <legend class="order-form__field-name">Тип</legend>
+          <ul class="order-form__radio-list radio-list">
+            <li class="radio-list__item">
+              <input class="radio-list__input" type="radio" name="interior" id="form-type__interior" checked>
+              <label class="radio-list__label" for="form-type__interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="radio-list__item">
+              <input class="radio-list__input" type="radio" name="interior" id="form-type__child-toy">
+              <label class="radio-list__label" for="form-type__child-toy">Аксессуар для интерьера</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__field">
+          <legend class="order-form__field-name">Цвет</legend>
+          <ul class="order-form__checkbox-list checkbox-list">
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__input" type="checkbox" name="color[]" id="color__white" checked>
+              <label class="checkbox-list__label" for="color__white">Белый</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__input" type="checkbox" name="color[]" id="color__gray" checked>
+              <label class="checkbox-list__label" for="color__gray">Серый</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__input" type="checkbox" name="color[]" id="color__tiffany">
+              <label class="checkbox-list__label" for="color__tiffany">Тиффани</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__input" type="checkbox" name="color[]" id="color__black">
+              <label class="checkbox-list__label" for="color__black">Черный</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__input" type="checkbox" name="color[]" id="color__pink">
+              <label class="checkbox-list__label" for="color__pink">Розовый</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input class="checkbox-list__input" type="checkbox" name="color[]" id="color__orange">
+              <label class="checkbox-list__label" for="color__orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </main>
     <footer class="page-footer">
       <ul class="page-footer__social-icons-list social-icons-list">
         <li class="social-icons-list__link"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">vk.</span></a></li>
@@ -45,27 +90,5 @@
         Разработано <span class="heading-link__vendor heading-link__access-label">htmlacademy.</span>
       </a>
     </footer>
-    <div class="order-dialog">
-      <div class="order-dialog__overlay"></div>
-      <form class="order-dialog__modal" >
-        <span class="order-dialog__modal">Добавить в корзину</span>
-        <div class="order-dialog__boxes-select boxes-select">
-          <span class="boxes-select__label">Выберите размер:</span>
-          <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-x" type="radio" name="product-size">
-            <label class="box-option__label" for="size-x">S</label>
-          </div>
-          <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-m" type="radio" name="product-size">
-            <label class="box-option__label" for="size-m">M</label>
-          </div>
-          <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-l" type="radio" name="product-size">
-            <label class="box-option__label" for="size-l">l</label>
-          </div>
-        </div>
-        <button class="order-dialog__action-key" >Добавить</button>
-      </form>
-    </div>
   </body>
 </html>

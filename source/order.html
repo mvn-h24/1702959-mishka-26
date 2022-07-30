@@ -37,7 +37,7 @@
     <main class="page-content">
       <form class="order-form">
         <fieldset class="order-form__field">
-          <legend class="order-form__field-name">Тип</legend>
+          <legend class="order-form__field-name">тип</legend>
           <ul class="order-form__input-list input-list">
             <li class="input-list__item">
               <input class="input-list__item-input input-list__item-input--radio" type="radio" name="interior" id="form-type__interior" checked>
@@ -50,7 +50,7 @@
           </ul>
         </fieldset>
         <fieldset class="order-form__field">
-          <legend class="order-form__field-name">Цвет</legend>
+          <legend class="order-form__field-name">цвет</legend>
           <ul class="order-form__input-list input-list">
             <li class="input-list__item">
               <input class="input-list__item-input input-list__item-input--checkbox" type="checkbox" name="color[]" id="color__white" checked>
@@ -79,21 +79,39 @@
           </ul>
         </fieldset>
         <fieldset class="order-form__field">
-          <legend class="order-form__field-name">ФИО</legend>
+          <legend class="order-form__field-name">фио</legend>
           <ul class="order-form__input-list input-list">
             <li class="input-list__item">
               <label class="input-list__item-label input-list__item-label--textbox" for="name_first">Имя:</label>
-              <input class="input-list__item-input input-list__item-input--textbox" type="checkbox" name="name[first]" id="name_first">
+              <input class="input-list__item-input input-list__item-input--textbox" type="text" name="name[first]" id="name_first">
             </li>
             <li class="input-list__item">
               <label class="input-list__item-label input-list__item-label--textbox" for="name_second">Имя:</label>
-              <input class="input-list__item-input input-list__item-input--textbox" type="checkbox" name="name[second]" id="name_second">
+              <input class="input-list__item-input input-list__item-input--textbox" type="text" name="name[second]" id="name_second">
             </li>
             <li class="input-list__item">
               <label class="input-list__item-label input-list__item-label--textbox" for="name_third">Имя:</label>
-              <input class="input-list__item-input input-list__item-input--textbox" type="checkbox" name="name[third]" id="name_third">
+              <input class="input-list__item-input input-list__item-input--textbox" type="text" name="name[third]" id="name_third">
             </li>
           </ul>
+        </fieldset>
+        <fieldset class="order-form__field">
+          <legend class="order-form__field-name">тел</legend>
+          <label class="order-form__input-wrapper">
+            <input class="order-form__input order-form__input--textbox" type="text" name="phone" required>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__field">
+          <legend class="order-form__field-name">e-mail</legend>
+          <label class="order-form__input-wrapper">
+            <input class="order-form__input order-form__input--textbox" type="text" name="email" required>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__field">
+          <legend class="order-form__field-name">доп</legend>
+          <label class="order-form__input-wrapper">
+            <textarea class="order-form__input--textarea" name="comment"></textarea>
+          </label>
         </fieldset>
       </form>
     </main>

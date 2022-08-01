@@ -8,14 +8,16 @@
     <h1 class="document-access-label">Оформление заказа в студии вязания "Мишка".</h1>
     <header class="page-header">
       <a class="page-header__logo logo" href="#">
-        <span class="logo__access-label">Студия вязания "Мишка", промо.</span>
+        <span class="access-label">Студия вязания "Мишка", промо.</span>
       </a>
       <nav class="page-header__navigation navigation">
-        <h2 class="navigation__access-label">Студия вязания для пользователя.</h2>
-        <label class="navigation__call-menu-key call-menu-key" for="main-nav__toggle">
-          <span class="call-menu-key__access-label">Пользовательское меню, открыть.</span>
-          <input class="call-menu-key__input" id="main-nav__toggle" type="checkbox">
-        </label>
+        <h2 class="access-label">Студия вязания для пользователя.</h2>
+        <div class="navigation__toggle-burger toggle-burger">
+          <input class="toggle-burger__input" id="main-nav__toggle" type="checkbox">
+          <label class="toggle-burger__image" for="main-nav__toggle">
+            <span class="access-label">Пользовательское меню, открыть.</span>
+          </label>
+        </div>
         <ul class="navigation__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__heading-link heading-link" href="#">Каталог товаров</a>
@@ -24,18 +26,17 @@
             <a class="main-nav__heading-link heading-link" href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__heading-link heading-link heading-link--search" href="#">Поиск по сайту</a>
+            <a class="main-nav__heading-link heading-link heading-link--icon-search" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__heading-link heading-link heading-link--cart" href="#">Корзина: пока пуста</a>
+            <a class="main-nav__heading-link heading-link heading-link--icon-cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
       <span class="page-header__subject">Вязание на заказ</span>
-      <span class="page-header__subject-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</span>
     </header>
     <main class="page-content">
-      <form class="order-form">
+      <form class="page-content__order-form order-form">
         <fieldset class="order-form__field">
           <legend class="order-form__field-name">тип</legend>
           <ul class="order-form__input-list input-list">
@@ -119,12 +120,12 @@
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social-icons-list social-icons-list">
-        <li class="social-icons-list__link"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">vk.</span></a></li>
-        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">youtube.</span></a></li>
-        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">telegram.</span></a></li>
+        <li class="social-icons-list__link"><a class="social-icons-list__anchor"><span class="access-label">vk.</span></a></li>
+        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="access-label">youtube.</span></a></li>
+        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="access-label">telegram.</span></a></li>
       </ul>
-      <a class="page-footer__heading-link heading-link heading-link--htmlacademy">
-        Разработано <span class="heading-link__vendor heading-link__access-label">htmlacademy.</span>
+      <a class="page-footer__heading-link heading-link heading-link--icon-htmlacademy">
+        Разработано <span class="access-label">htmlacademy.</span>
       </a>
     </footer>
   </body>

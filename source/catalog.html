@@ -81,5 +81,27 @@
         Разработано <span class="access-label">htmlacademy.</span>
       </a>
     </footer>
+    <div class="order-dialog">
+      <div class="order-dialog__overlay"></div>
+      <form class="order-dialog__modal" >
+        <span class="order-dialog__modal">Добавить в корзину</span>
+        <div class="order-dialog__boxes-select boxes-select">
+          <span class="boxes-select__label">Выберите размер:</span>
+          <div class="boxes-select__box-option box-option">
+            <input class="box-option__input" id="size-x" type="radio" name="product-size">
+            <label class="box-option__label" for="size-x">S</label>
+          </div>
+          <div class="boxes-select__box-option box-option">
+            <input class="box-option__input" id="size-m" type="radio" name="product-size">
+            <label class="box-option__label" for="size-m">M</label>
+          </div>
+          <div class="boxes-select__box-option box-option">
+            <input class="box-option__input" id="size-l" type="radio" name="product-size">
+            <label class="box-option__label" for="size-l">l</label>
+          </div>
+        </div>
+        <button class="order-dialog__action-key" >Добавить</button>
+      </form>
+    </div>
   </body>
 </html>

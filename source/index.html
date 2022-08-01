@@ -5,17 +5,19 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <h1 class="document-access-label">Студия вязания "Мишка".</h1>
+    <h1 class="access-label">Студия вязания "Мишка".</h1>
     <header class="page-header">
       <a class="page-header__logo logo">
-        <span class="logo__access-label">Студия вязания "Мишка", промо.</span>
+        <span class="access-label">Студия вязания "Мишка", промо.</span>
       </a>
       <nav class="page-header__navigation navigation">
-        <h2 class="navigation__access-label">Студия вязания для пользователя.</h2>
-        <label class="navigation__call-menu-key call-menu-key" for="main-nav__toggle">
-          <span class="call-menu-key__access-label">Пользовательское меню, открыть.</span>
-          <input class="call-menu-key__input" id="main-nav__toggle" type="checkbox">
-        </label>
+        <h2 class="access-label">Студия вязания для пользователя.</h2>
+        <div class="navigation__toggle-burger toggle-burger">
+          <input class="toggle-burger__input" id="main-nav__toggle" type="checkbox">
+          <label class="toggle-burger__image" for="main-nav__toggle">
+            <span class="access-label">Пользовательское меню, открыть.</span>
+          </label>
+        </div>
         <ul class="navigation__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__heading-link heading-link" href="#">Каталог товаров</a>
@@ -24,10 +26,10 @@
             <a class="main-nav__heading-link heading-link" href="#">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__heading-link heading-link heading-link--search" href="#">Поиск по сайту</a>
+            <a class="main-nav__heading-link heading-link heading-link--icon-search" href="#">Поиск по сайту</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__heading-link heading-link heading-link--cart" href="#">Корзина: пока пуста</a>
+            <a class="main-nav__heading-link heading-link heading-link--icon-cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -65,19 +67,19 @@
       <section class="page-content__about-us about-us">
         <h2 class="about-us__header">Коротко о нас</h2>
         <ul class="about-us__features-list">
-          <li class="about-us__feature-item">Экологически чистые материалы</li>
-          <li class="about-us__feature-item">Скандинавский стиль по российской цене</li>
-          <li class="about-us__feature-item">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__feature-item">Связано вручную с любовью и умилением</li>
-          <li class="about-us__feature-item">Поддержка отечественного производителя</li>
-          <li class="about-us__feature-item">Поставляется в подарочной упаковке</li>
+          <li class="about-us__feature">Экологически чистые материалы</li>
+          <li class="about-us__feature">Скандинавский стиль по российской цене</li>
+          <li class="about-us__feature">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__feature">Связано вручную с любовью и умилением</li>
+          <li class="about-us__feature">Поддержка отечественного производителя</li>
+          <li class="about-us__feature">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="page-content__feedback feedback feedback--wavedblock">
         <h2 class="feedback__header">Отзывы</h2>
         <ul class="feedback__feedback-list feedback-list">
-          <li class="feedback-list__feedback-item feedback-item">
-            <span class="feedback-item__message">
+          <li class="feedback-list__customer-feedback customer-feedback">
+            <span class="customer-feedback__message">
               Я молодая мама, но всё равно фотографии не
               набирали и близко такого количества лайков,
               как у популярных инстамамочек.
@@ -85,42 +87,42 @@
               и мои фотографии сразу стали более стильными,
               а также набирают больше лайков!
             </span>
-            <span class="feedback-item__author">Анастасия Красильникова</span>
-            <span class="feedback-item__contact">@misssssiskras</span>
+            <span class="customer-feedback__author">Анастасия Красильникова</span>
+            <span class="customer-feedback__contact">@misssssiskras</span>
           </li>
         </ul>
         <div class="feedback__slide-control slide-control">
-          <button class="slide-control__prev"><span class="slide-control__access-label">Предыдущий отзыв.</span></button>
-          <button class="slide-control__next"><span class="slide-control__access-label">Следующий отзыв.</span></button>
+          <button class="slide-control__prev"><span class="access-label">Предыдущий отзыв.</span></button>
+          <button class="slide-control__next"><span class="access-label">Следующий отзыв.</span></button>
         </div>
-        <a class="feedback__outline-btn" href="#">Написать</a>
+        <a class="feedback__outline-btn outline-btn" href="#">Написать</a>
       </section>
       <section class="page-content__contacts contacts">
         <h2 class="contacts__header">Контакты</h2>
         <dl class="contacts__info-list">
-          <div class="contacts__info-item">
+          <div class="contacts__info">
             <dt class="contacts__info-variant">e-mail:</dt>
             <dd class="contacts__info-variant-value">info@mimimishkashop.ru</dd>
           </div>
-          <div class="contacts__info-item">
+          <div class="contacts__info">
             <dt class="contacts__info-variant">адрес:</dt>
             <dd class="contacts__info-variant-value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
           </div>
         </dl>
         <address class="contacts__address">
-          <img class="contacts__address-placeholder" alt="Расположение студии на карте." src="./img/content/contact-map__plcaehoder.png">
+          <img class="contacts__address-placeholder" alt="Расположение студии на карте." src="./img/content/contact-map__placeholder.png">
         </address>
         <a class="contacts__outline-btn outline-btn" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social-icons-list social-icons-list">
-        <li class="social-icons-list__link"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">vk.</span></a></li>
-        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">youtube.</span></a></li>
-        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="social-icons-list__access-label">telegram.</span></a></li>
+        <li class="social-icons-list__link"><a class="social-icons-list__anchor"><span class="access-label">vk.</span></a></li>
+        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="access-label">youtube.</span></a></li>
+        <li class="social-icons-list__item"><a class="social-icons-list__anchor"><span class="access-label">telegram.</span></a></li>
       </ul>
-      <a class="page-footer__heading-link heading-link heading-link--htmlacademy">
-        Разработано <span class="heading-link__vendor heading-link__access-label">htmlacademy.</span>
+      <a class="page-footer__heading-link heading-link heading-link--icon-htmlacademy">
+        Разработано <span class="access-label">htmlacademy.</span>
       </a>
     </footer>
     <div class="order-dialog">

@@ -12,12 +12,9 @@
       </a>
       <nav class="page-header__navigation navigation">
         <h2 class="access-label">Студия вязания для пользователя.</h2>
-        <div class="navigation__toggle-burger toggle-burger">
-          <input class="toggle-burger__input" id="main-nav__toggle" type="checkbox">
-          <label class="toggle-burger__image" for="main-nav__toggle">
-            <span class="access-label">Пользовательское меню, открыть.</span>
-          </label>
-        </div>
+        <button class="navigation__toggle-burger" type="submit">
+          <span class="access-label">Пользовательское меню, открыть.</span>
+        </button>
         <ul class="navigation__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__heading-link heading-link" href="#">Каталог товаров</a>
@@ -40,24 +37,24 @@
       </ul>
     </header>
     <main class="page-content">
-      <section class="page-content__popular-product popular-product popular-product--wavedblock">
+      <section class="page-content__popular-product popular-product">
         <div class="popular-product__heading-wrapper">
           <h2 class="popular-product__tagline">Товар недели</h2>
           <h3 class="popular-product__name">Вязаные корзинки</h3>
         </div>
         <span class="popular-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</span>
-        <dl class="popular-product__feature-list feature-list">
-          <div class="feature-list__feature-item feature-item">
-            <dt class="feature-item__name">Цвет:</dt>
-            <dd class="feature-item__value">тиффани/серый</dd>
+        <dl class="popular-product__feature-list">
+          <div class="popular-product__feature-item">
+            <dt class="popular-product__feature-name">Цвет:</dt>
+            <dd class="popular-product__feature-value">тиффани/серый</dd>
           </div>
-          <div class="feature-list__feature-item feature-item">
-            <dt class="feature-item__name">Диаметр:</dt>
-            <dd class="feature-item__value">25см</dd>
+          <div class="popular-product__feature-item">
+            <dt class="popular-product__feature-name">Диаметр:</dt>
+            <dd class="popular-product__feature-value">25см</dd>
           </div>
-          <div class="feature-list__feature-item feature-item">
-            <dt class="feature-item__name">Высота:</dt>
-            <dd class="feature-item__value">15см</dd>
+          <div class="popular-product__feature-item">
+            <dt class="popular-product__feature-name">Высота:</dt>
+            <dd class="popular-product__feature-value">15см</dd>
           </div>
         </dl>
         <img class="popular-product__preview" alt="Пример вязанных корзинок." src="./img/products/1-basket-preview.jpg" width="260" height="315">
@@ -75,7 +72,7 @@
           <li class="about-us__feature">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="page-content__feedback feedback feedback--wavedblock">
+      <section class="page-content__feedback feedback">
         <h2 class="feedback__header">Отзывы</h2>
         <ul class="feedback__feedback-list feedback-list">
           <li class="feedback-list__customer-feedback customer-feedback">
@@ -92,8 +89,8 @@
           </li>
         </ul>
         <div class="feedback__slide-control slide-control">
-          <button class="slide-control__prev"><span class="access-label">Предыдущий отзыв.</span></button>
-          <button class="slide-control__next"><span class="access-label">Следующий отзыв.</span></button>
+          <button class="slide-control__btn slide-control__btn--prev"><span class="access-label">Предыдущий отзыв.</span></button>
+          <button class="slide-control__btn slide-control__btn--next"><span class="access-label">Следующий отзыв.</span></button>
         </div>
         <a class="feedback__outline-btn outline-btn" href="#">Написать</a>
       </section>
@@ -102,11 +99,15 @@
         <dl class="contacts__info-list">
           <div class="contacts__info">
             <dt class="contacts__info-variant">e-mail:</dt>
-            <dd class="contacts__info-variant-value">info@mimimishkashop.ru</dd>
+            <dd class="contacts__info-variant-value">
+              <a class="contacts__info-anchor" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </dd>
           </div>
           <div class="contacts__info">
             <dt class="contacts__info-variant">адрес:</dt>
-            <dd class="contacts__info-variant-value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+            <dd class="contacts__info-variant-value">
+              <a class="contacts__info-anchor" href="https://yandex.ru/maps/-/CCURiZvcdC">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</a>
+            </dd>
           </div>
         </dl>
         <address class="contacts__address">
@@ -127,24 +128,24 @@
     </footer>
     <div class="order-dialog">
       <div class="order-dialog__overlay"></div>
-      <form class="order-dialog__modal" >
+      <form class="order-dialog__modal" method="POST" action="https://echo.htmlacademy.ru">
         <span class="order-dialog__modal">Добавить в корзину</span>
         <div class="order-dialog__boxes-select boxes-select">
           <span class="boxes-select__label">Выберите размер:</span>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-x" type="radio" name="product-size">
-            <label class="box-option__label" for="size-x">S</label>
+            <input class="box-option__input" id="size-x" type="radio" name="product-size" value="1">
+            <label class="box-option__label" for="size-x">s</label>
           </div>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-m" type="radio" name="product-size">
-            <label class="box-option__label" for="size-m">M</label>
+            <input class="box-option__input" id="size-m" type="radio" name="product-size" value="2">
+            <label class="box-option__label" for="size-m">m</label>
           </div>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-l" type="radio" name="product-size">
+            <input class="box-option__input" id="size-l" type="radio" name="product-size" value="3">
             <label class="box-option__label" for="size-l">l</label>
           </div>
         </div>
-        <button class="order-dialog__action-key" >Добавить</button>
+        <button class="order-dialog__action-key" type="submit">Добавить</button>
       </form>
     </div>
   </body>

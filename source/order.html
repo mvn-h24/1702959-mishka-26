@@ -12,12 +12,9 @@
       </a>
       <nav class="page-header__navigation navigation">
         <h2 class="access-label">Студия вязания для пользователя.</h2>
-        <div class="navigation__toggle-burger toggle-burger">
-          <input class="toggle-burger__input" id="main-nav__toggle" type="checkbox">
-          <label class="toggle-burger__image" for="main-nav__toggle">
-            <span class="access-label">Пользовательское меню, открыть.</span>
-          </label>
-        </div>
+        <button class="navigation__toggle-burger">
+          <span class="access-label">Пользовательское меню, открыть.</span>
+        </button>
         <ul class="navigation__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__heading-link heading-link" href="#">Каталог товаров</a>
@@ -41,11 +38,11 @@
           <legend class="order-form__field-name">тип</legend>
           <ul class="order-form__input-list input-list">
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--radio" type="radio" name="interior" id="form-type__interior" checked>
+              <input class="input-list__input input-list__input--radio" type="radio" name="interior" id="form-type__interior" checked value="1">
               <label class="input-list__label input-list__label--radio" for="form-type__interior">Аксессуар для интерьера</label>
             </li>
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--radio" type="radio" name="interior" id="form-type__child-toy">
+              <input class="input-list__input input-list__input--radio" type="radio" name="interior" id="form-type__child-toy" value="2">
               <label class="input-list__label input-list__label--radio" for="form-type__child-toy">Аксессуар для интерьера</label>
             </li>
           </ul>
@@ -54,27 +51,27 @@
           <legend class="order-form__field-name">цвет</legend>
           <ul class="order-form__input-list input-list">
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__white" checked>
+              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__white" checked value="1">
               <label class="input-list__label input-list__label--checkbox" for="color__white">Белый</label>
             </li>
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__gray" checked>
+              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__gray" checked value="2">
               <label class="input-list__label input-list__label--checkbox" for="color__gray">Серый</label>
             </li>
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__tiffany">
+              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__tiffany" value="3">
               <label class="input-list__label input-list__label--checkbox" for="color__tiffany">Тиффани</label>
             </li>
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__black">
+              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__black" value="4">
               <label class="input-list__label input-list__label--checkbox" for="color__black">Черный</label>
             </li>
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__pink">
+              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__pink" value="5">
               <label class="input-list__label input-list__label--checkbox" for="color__pink">Розовый</label>
             </li>
             <li class="input-list__item">
-              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__orange">
+              <input class="input-list__input input-list__input--checkbox" type="checkbox" name="color[]" id="color__orange" value="6">
               <label class="input-list__label input-list__label--checkbox" for="color__orange">Оранжевый</label>
             </li>
           </ul>
@@ -99,13 +96,13 @@
         <fieldset class="order-form__field">
           <legend class="order-form__field-name">тел</legend>
           <label class="order-form__input-wrapper">
-            <input class="order-form__input order-form__input--textbox" type="text" name="phone" required>
+            <input class="order-form__input order-form__input--textbox" type="tel" name="phone" required>
           </label>
         </fieldset>
         <fieldset class="order-form__field">
           <legend class="order-form__field-name">e-mail</legend>
           <label class="order-form__input-wrapper">
-            <input class="order-form__input order-form__input--textbox" type="text" name="email" required>
+            <input class="order-form__input order-form__input--textbox" type="email" name="email" required>
           </label>
         </fieldset>
         <fieldset class="order-form__field">

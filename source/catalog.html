@@ -12,12 +12,9 @@
       </a>
       <nav class="page-header__navigation navigation">
         <h2 class="access-label">Студия вязания для пользователя.</h2>
-        <div class="navigation__toggle-burger toggle-burger">
-          <input class="toggle-burger__input" id="main-nav__toggle" type="checkbox">
-          <label class="toggle-burger__image" for="main-nav__toggle">
-            <span class="access-label">Пользовательское меню, открыть.</span>
-          </label>
-        </div>
+        <button class="navigation__toggle-burger">
+          <span class="access-label">Пользовательское меню, открыть.</span>
+        </button>
         <ul class="navigation__main-nav main-nav">
           <li class="main-nav__item">
             <a class="main-nav__heading-link heading-link" href="#">Каталог товаров</a>
@@ -40,22 +37,28 @@
         <h2 class="access-label">Листинг продукции.</h2>
         <ul class="page-content__product-list product-list">
           <li class="product-list__product-preview product-preview">
-            <img class="product-preview__image" src="./img/products/2-rabbit-jumper.jpg" alt="Вязанный зайчик.">
-            <span class="product-preview__name">Зайчик-попрыгайчик</span>
+            <a class="product-preview__anchor" href="#">
+              <img class="product-preview__image" src="./img/products/2-rabbit-jumper.jpg" alt="Вязанный зайчик.">
+              <span class="product-preview__name">Зайчик-попрыгайчик</span>
+            </a>
             <span class="product-preview__props">Рост 30 см, вес 200 г</span>
             <span class="product-preview__price">1 200 руб.</span>
             <button class="product-preview__order-key">Заказать.</button>
           </li>
           <li class="product-list__product-preview product-preview">
-            <img class="product-preview__image" src="./img/products/3-clothes-cart.jpg" alt="Бельевая корзина.">
-            <span class="product-preview__name">Корзинка для белья</span>
+            <a class="product-preview__anchor" href="#">
+              <img class="product-preview__image" src="./img/products/3-clothes-cart.jpg" alt="Бельевая корзина.">
+              <span class="product-preview__name">Корзинка для белья</span>
+            </a>
             <span class="product-preview__props">Диаметр 15 см, высота 10 см</span>
             <span class="product-preview__price">690 руб.</span>
             <button class="product-preview__order-key">Заказать.</button>
           </li>
           <li class="product-list__product-preview product-preview">
-            <img class="product-preview__image" src="./img/products/4-toys-cart.jpg" alt="Корзина для игрушек.">
-            <span class="product-preview__name">Большая корзинка для игрушек</span>
+            <a class="product-preview__anchor" href="#">
+              <img class="product-preview__image" src="./img/products/4-toys-cart.jpg" alt="Корзина для игрушек.">
+              <span class="product-preview__name">Большая корзинка для игрушек</span>
+            </a>
             <span class="product-preview__props">Диаметр 30 см, высота 30 см</span>
             <span class="product-preview__price">1 500 руб.</span>
             <button class="product-preview__order-key">Заказать.</button>
@@ -68,7 +71,7 @@
           <span class="access-label">Запустить видео</span>
         </button>
         <p class="video-modal__announce">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="video-modal__order-key" type="button">Сделать заказ</button>
+        <a class="video-modal__order-key" href="/order.html">Сделать заказ</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -83,24 +86,24 @@
     </footer>
     <div class="order-dialog">
       <div class="order-dialog__overlay"></div>
-      <form class="order-dialog__modal" >
+      <form class="order-dialog__modal" method="POST" action="https://echo.htmlacademy.ru">
         <span class="order-dialog__modal">Добавить в корзину</span>
         <div class="order-dialog__boxes-select boxes-select">
           <span class="boxes-select__label">Выберите размер:</span>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-x" type="radio" name="product-size">
-            <label class="box-option__label" for="size-x">S</label>
+            <input class="box-option__input" id="size-x" type="radio" name="product-size" value="1">
+            <label class="box-option__label" for="size-x">s</label>
           </div>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-m" type="radio" name="product-size">
-            <label class="box-option__label" for="size-m">M</label>
+            <input class="box-option__input" id="size-m" type="radio" name="product-size" value="2">
+            <label class="box-option__label" for="size-m">m</label>
           </div>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-l" type="radio" name="product-size">
+            <input class="box-option__input" id="size-l" type="radio" name="product-size" value="3">
             <label class="box-option__label" for="size-l">l</label>
           </div>
         </div>
-        <button class="order-dialog__action-key" >Добавить</button>
+        <button class="order-dialog__action-key" type="submit">Добавить</button>
       </form>
     </div>
   </body>

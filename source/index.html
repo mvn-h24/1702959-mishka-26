@@ -128,24 +128,24 @@
     </footer>
     <div class="order-dialog">
       <div class="order-dialog__overlay"></div>
-      <form class="order-dialog__modal" method="POST" action="https://echo.htmlacademy.ru">
-        <span class="order-dialog__modal">Добавить в корзину</span>
-        <div class="order-dialog__boxes-select boxes-select">
-          <span class="boxes-select__label">Выберите размер:</span>
-          <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-x" type="radio" name="product-size" value="1">
-            <label class="box-option__label" for="size-x">s</label>
+      <form class="order-dialog__form form form--order-modal" method="POST" action="https://echo.htmlacademy.ru">
+        <span class="form__title">Добавить в корзину</span>
+        <div class="form__input form__input--selectboxes">
+          <span class="form__input-notice">Выберите размер:</span>
+          <div class="form__input-option">
+            <input class="form__input-source" id="size-x" type="radio" name="product-size" value="1">
+            <label class="form__input-label" for="size-x">s</label>
           </div>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-m" type="radio" name="product-size" value="2">
-            <label class="box-option__label" for="size-m">m</label>
+            <input class="form__input-source" id="size-m" type="radio" name="product-size" value="2">
+            <label class="form__input-label" for="size-m">m</label>
           </div>
           <div class="boxes-select__box-option box-option">
-            <input class="box-option__input" id="size-l" type="radio" name="product-size" value="3">
-            <label class="box-option__label" for="size-l">l</label>
+            <input class="form__input-source" id="size-l" type="radio" name="product-size" value="3">
+            <label class="form__input-label" for="size-l">l</label>
           </div>
         </div>
-        <button class="order-dialog__action-key" type="submit">Добавить</button>
+        <button class="form__primary-btn primary-btn" type="submit">Добавить</button>
       </form>
     </div>
   </body>

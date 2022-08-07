@@ -1,9 +1,11 @@
-$font-family:  "OpenSans", sans-serif;
+@font-family:  "OpenSans", sans-serif;
 @color-text-primary: #000;
 @color-text-secondary: #FFF;
 @color-text-content: #444;
 
 @color-main: #FFF;
+@color-ui-main: #231F20;
+
 @color-accent: hsl(168, 54%, 60%);
 .accent(@dark: 0){
   @hue: hue(@color-accent) + @dark * 3;
@@ -12,50 +14,67 @@ $font-family:  "OpenSans", sans-serif;
   @accent: hsl(@hue, @saturate, @light);
 }
 
-.font(2xs, @weight:400){
+.font(2xs, @weight:400, @color: @color-text-primary){
+  font-family: @font-family;
+  font-weight: @weight;
   font-size: 14px;
   line-height: 30px;
-  font-weight: @weight;
+  color: @color;
 }
-.font(xs, @weight:400){
+.font(xs, @weight:400, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 15px;
   line-height: 24px;
+  color: @color;
 }
-.font(s, @weight:400){
+.font(s, @weight:400, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 15px;
   line-height: 30px;
+  color: @color;
 }
 
-.font(m, @weight: 700){
+.font(m, @weight: 700, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 17px;
   line-height: 20px;
+  color: @color;
 }
-.font(xm, @weight: 700){
+.font(xm, @weight: 700, @color: @color-text-primary){
   font-weight: @weight;
   font-size: 17px;
   line-height: 24px;
+  color: @color;
 }
 
-.font(l, @weight: 700){
+.font(l, @weight: 700, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 18px;
   line-height: 20px;
+  color: @color;
 }
-.font(xl, @weight: 700){
+.font(xl, @weight: 700, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 19px;
   line-height: 24px;
+  color: @color;
 }
-.font(2xl, @weight: 700){
+.font(2xl, @weight: 700, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 27px;
   line-height: 30px;
+  color: @color;
 }
-.font(3xl, @weight: 700){
+.font(3xl, @weight: 700, @color: @color-text-primary){
+  font-family: @font-family;
   font-weight: @weight;
   font-size: 25px;
   line-height: 30px;
+  color: @color;
 }

@@ -1,0 +1,30 @@
+@import "source/less/common/variables";
+
+.burger__line(){
+  width: 100%;
+  display: inline-block;
+  background-color: @color-ui-main;
+  height: 2px;
+}
+
+.toggle-burger{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+
+  &:after, &:before{
+    content: "";
+    .burger__line();
+  }
+}
+
+.toggle-burger__line{
+  .burger__line()
+}

@@ -1,0 +1,61 @@
+$font-family:  "OpenSans", sans-serif;
+@color-text-primary: #000;
+@color-text-secondary: #FFF;
+@color-text-content: #444;
+
+@color-main: #FFF;
+@color-accent: hsl(168, 54%, 60%);
+.accent(@dark: 0){
+  @hue: hue(@color-accent) + @dark * 3;
+  @saturate:(saturation(@color-accent) - @dark * 6%);
+  @light:(lightness(@color-accent) - @dark * 5%);
+  @accent: hsl(@hue, @saturate, @light);
+}
+
+.font(2xs, @weight:400){
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: @weight;
+}
+.font(xs, @weight:400){
+  font-weight: @weight;
+  font-size: 15px;
+  line-height: 24px;
+}
+.font(s, @weight:400){
+  font-weight: @weight;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.font(m, @weight: 700){
+  font-weight: @weight;
+  font-size: 17px;
+  line-height: 20px;
+}
+.font(xm, @weight: 700){
+  font-weight: @weight;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.font(l, @weight: 700){
+  font-weight: @weight;
+  font-size: 18px;
+  line-height: 20px;
+}
+.font(xl, @weight: 700){
+  font-weight: @weight;
+  font-size: 19px;
+  line-height: 24px;
+}
+.font(2xl, @weight: 700){
+  font-weight: @weight;
+  font-size: 27px;
+  line-height: 30px;
+}
+.font(3xl, @weight: 700){
+  font-weight: @weight;
+  font-size: 25px;
+  line-height: 30px;
+}

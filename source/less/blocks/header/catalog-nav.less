@@ -1,0 +1,38 @@
+@import "source/less/common/variables";
+
+@icon-size: 60px;
+.catalog-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.catalog-nav__item{
+  &:after{
+    content: "";
+    width: @icon-size;
+    height: @icon-size;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: @icon-size @icon-size;
+  }
+}
+.catalog-nav__item:nth-child(1){
+  .accent();
+  background-color: @accent;
+  &:after{
+    background-image: url("/img/content/1-section-interior.svg");
+    background-size: @icon-size - 20 @icon-size;
+    width: @icon-size - 20;
+  }
+}
+.catalog-nav__item:nth-child(2){
+  .accent(2);
+  background-color: @accent;
+  &:after{
+    background-image: url("/img/content/2-section-toys.svg");
+  }
+}
+.catalog-nav__link{
+  .font(xl, @color: @color-text-secondary);
+  text-decoration: none;
+}

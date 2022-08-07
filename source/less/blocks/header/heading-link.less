@@ -1,23 +1,25 @@
 @import "source/less/common/variables";
 
-.heading-link{
+.heading-link {
   .font(xm);
   text-decoration: none;
   @icon-size: 18px;
-  &:before{
+
+  &::before {
     content: "";
     width: @icon-size;
     height: @icon-size;
     display: inline-block;
   }
 
-  &--icon-search{
-    &:before{
+  &--icon-search {
+    &::before {
       background-image: url("/img/assets/magnifier.svg");
     }
   }
-  &--icon-cart{
-    &:before{
+
+  &--icon-cart {
+    &::before {
       width: @icon-size + 3px;
       background-image: url("/img/assets/cart.svg");
     }

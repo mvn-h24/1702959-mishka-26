@@ -1,8 +1,12 @@
 @import "source/less/config/variables";
+@import "source/less/mixin/ruleset";
 
 .popular-product {
   display: flex;
   flex-direction: column;
+  &::after{
+    .waved-block();
+  }
 }
 
 .popular-product__heading-wrapper {

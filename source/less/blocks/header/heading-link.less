@@ -5,7 +5,8 @@
   text-decoration: none;
   @icon-size: 18px;
 
-  &--icon-search::before, &--icon-cart::before {
+  &--icon-search::before,
+  &--icon-cart::before {
     content: "";
     width: @icon-size;
     height: @icon-size;
@@ -13,11 +14,11 @@
   }
 
   &--icon-search::before {
-      background-image: url("/img/assets/magnifier.svg");
+    background-image: url("/img/assets/magnifier.svg");
   }
 
   &--icon-cart::before {
-      width: @icon-size + 3px;
-      background-image: url("/img/assets/cart.svg");
+    width: @icon-size + 3px;
+    background-image: url("/img/assets/cart.svg");
   }
 }

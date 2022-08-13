@@ -2,22 +2,20 @@
 @color-text-primary: #000;
 @color-text-secondary: #FFF;
 @color-text-content: #444;
+@color-ui-btn: #444;
 @color-main: #FFF;
-@color-ui-main: #231F20;
 @color-accent: hsl(168, 54%, 60%);
+@color-ui-main: #231F20;
 
 .accent(@dark: 0) {
-  @hue: hue(@color-accent) + @dark * 3;
-  @saturate: (saturation(@color-accent) - @dark * 6%);
-  @light: (lightness(@color-accent) - @dark * 5%);
-  @accent: hsl(@hue, @saturate, @light);
+  @accent: hsl(
+      (hue(@color-accent) + @dark * 3),
+      (saturation(@color-accent) - @dark * 6%),
+      (lightness(@color-accent) - @dark * 5%)
+  );
 }
 
-.font(
-  2xs,
-  @weight:400,
-  @color: @color-text-primary
-) {
+.font(2xs, @weight:400, @color: @color-text-primary) {
   font-family: @font-family;
   font-weight: @weight;
   font-size: 14px;
@@ -86,4 +84,11 @@
   font-size: 27px;
   line-height: 30px;
   color: @color;
+}
+.font(child) {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }

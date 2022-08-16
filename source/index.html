@@ -160,18 +160,20 @@
         <span class="form__title">Добавить в корзину</span>
         <div class="form__input form__input--selectboxes">
             <span class="form__input-notice">Выберите размер:</span>
-            <div class="form__input-option">
-                <input class="form__input-source" id="size-x" type="radio" name="product-size" value="1">
-                <label class="form__input-label" for="size-x">s</label>
-            </div>
-            <div class="boxes-select__box-option box-option">
-                <input class="form__input-source" id="size-m" type="radio" name="product-size" value="2">
-                <label class="form__input-label" for="size-m">m</label>
-            </div>
-            <div class="boxes-select__box-option box-option">
-                <input class="form__input-source" id="size-l" type="radio" name="product-size" value="3">
-                <label class="form__input-label" for="size-l">l</label>
-            </div>
+            <ul class="form__boxes-select boxes-select">
+                <li class="boxes-select__box-option box-option">
+                    <input class="box-option__input-source" id="size-x" type="radio" name="product-size" value="1" checked>
+                    <label class="box-option__input-label" for="size-x">s</label>
+                </li>
+                <li class="boxes-select__box-option box-option">
+                    <input class="box-option__input-source" id="size-m" type="radio" name="product-size" value="2">
+                    <label class="box-option__input-label" for="size-m">m</label>
+                </li>
+                <li class="boxes-select__box-option box-option">
+                    <input class="box-option__input-source" id="size-l" type="radio" name="product-size" value="3">
+                    <label class="box-option__input-label" for="size-l">l</label>
+                </li>
+            </ul>
         </div>
         <button class="form__primary-btn primary-btn" type="submit">Добавить</button>
     </form>

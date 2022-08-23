@@ -1,28 +1,34 @@
 @import "source/less/config/variables";
 
-.product-preview{
+.product-preview {
   display: flex;
   flex-direction: column;
 }
-.product-preview__anchor{
+
+.product-preview__anchor {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-decoration: none;
 }
-.product-preview__image{
+
+.product-preview__image {
   display: block;
 }
-.product-preview__name{
+
+.product-preview__name {
   .font(m);
 }
-.product-preview__props{
+
+.product-preview__props {
   .font(2xs);
 }
-.product-preview__price{
+
+.product-preview__price {
   .font(xs, 700);
 }
-.product-preview__order-key{
+
+.product-preview__order-key {
   align-self: flex-start;
 
   background: none;
@@ -30,7 +36,8 @@
   margin: 0;
   border: none;
   display: inline-block;
-  &::before{
+
+  &::before {
     content: url("/img/assets/cart.svg");
   }
 }

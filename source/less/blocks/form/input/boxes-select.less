@@ -1,16 +1,18 @@
 @import "source/less/config/variables";
 @import "source/less/blocks/form/input/boxes-select";
 
-.form__input-notice{
+.form__input-notice {
   color: @color-text-content;
 }
-.form__input{
-   &--selectboxes{
-     display: grid;
-     flex-direction: column;
-   }
- }
-.boxes-select{
+
+.form__input {
+  &--selectboxes {
+    display: grid;
+    flex-direction: column;
+  }
+}
+
+.boxes-select {
   display: flex;
   margin: 0;
   padding: 0;
@@ -19,10 +21,11 @@
   .font(m);
 }
 
-.box-option__input-label{
+.box-option__input-label {
   display: inline-block;
   border: 2px solid fade(@color-ui-btn, 10%);
 }
-.box-option__input-source:checked + .box-option__input-label{
+
+.box-option__input-source:checked + .box-option__input-label {
   border: 2px solid .accent() [@accent];
 }

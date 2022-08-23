@@ -1,14 +1,16 @@
 @import "source/less/config/variables";
 
-.video-modal__heading{
+.video-modal__heading {
   margin: 0;
   .font(m, 700);
-  &::before{
+
+  &::before {
     content: url("/img/assets/camera.svg");
     display: inline-block;
   }
 }
-.video-modal__placeholder{
+
+.video-modal__placeholder {
   --bg-img: linear-gradient(45deg, @color-accent, @color-secondary 25%);
   background-image: var(--bg-img);
   background-color: @color-secondary;
@@ -20,12 +22,14 @@
   height: 150px;
   border: none;
   cursor: pointer;
-  &::before{
+
+  &::before {
     content: url("/img/assets/play-btn.svg");
     display: inline-block;
   }
 }
-.video-modal__announce{
-  .font(2xs);
+
+.video-modal__announce {
+  .font(2 xs);
   margin: 0;
 }

@@ -35,21 +35,21 @@
     <span class="page-header__subject page-header__subject--color-bg">Вязание на заказ</span>
 </header>
 <main class="page-content">
+    <div class="page-content__intro">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+        уточнить детали.
+    </div>
     <form class="form form--order-request" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="form__field">
             <legend class="form__field-name">тип</legend>
             <ul class="form__input-list">
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--radio" type="radio" name="interior"
-                           id="form-type__interior" checked value="1">
-                    <label class="form__input-label form__input-label--radio" for="form-type__interior">Аксессуар для
-                        интерьера</label>
+                    <input class="form__input-source form__input-source--radio" type="radio" name="interior" id="form-type__interior" checked value="1">
+                    <label class="form__input-label form__input-label--radio" for="form-type__interior">Аксессуар для интерьера</label>
                 </li>
                 <li class="form__item">
-                    <input class="form__input-source form__input-source--radio" type="radio" name="interior"
-                           id="form-type__child-toy" value="2">
-                    <label class="form__input-label form__input-label--radio" for="form-type__child-toy">Аксессуар для
-                        интерьера</label>
+                    <input class="form__input-source form__input-source--radio" type="radio" name="interior" id="form-type__child-toy" value="2">
+                    <label class="form__input-label form__input-label--radio" for="form-type__child-toy">Аксессуар для интерьера</label>
                 </li>
             </ul>
         </fieldset>
@@ -57,33 +57,27 @@
             <legend class="form__field-name">цвет</legend>
             <ul class="form__input-list">
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]"
-                           id="color__white" checked value="1">
+                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]" id="color__white" checked value="1">
                     <label class="form__input-label form__input-label--checkbox" for="color__white">Белый</label>
                 </li>
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]"
-                           id="color__gray" checked value="2">
+                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]" id="color__gray" checked value="2">
                     <label class="form__input-label form__input-label--checkbox" for="color__gray">Серый</label>
                 </li>
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]"
-                           id="color__tiffany" value="3">
+                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]" id="color__tiffany" value="3">
                     <label class="form__input-label form__input-label--checkbox" for="color__tiffany">Тиффани</label>
                 </li>
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]"
-                           id="color__black" value="4">
+                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]" id="color__black" value="4">
                     <label class="form__input-label form__input-label--checkbox" for="color__black">Черный</label>
                 </li>
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]"
-                           id="color__pink" value="5">
+                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]" id="color__pink" value="5">
                     <label class="form__input-label form__input-label--checkbox" for="color__pink">Розовый</label>
                 </li>
                 <li class="form__input">
-                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]"
-                           id="color__orange" value="6">
+                    <input class="form__input-source form__input-source--checkbox" type="checkbox" name="color[]" id="color__orange" value="6">
                     <label class="form__input-label form__input-label--checkbox" for="color__orange">Оранжевый</label>
                 </li>
             </ul>
@@ -93,18 +87,15 @@
             <ul class="form__input-list">
                 <li class="form__input">
                     <label class="form__input-label form__input-label--textbox" for="name_first">Имя:</label>
-                    <input class="form__input-source form__input-source--textbox" type="text" name="name[first]"
-                           id="name_first">
+                    <input class="form__input-source form__input-source--textbox" type="text" name="name[first]" id="name_first">
                 </li>
                 <li class="form__input">
                     <label class="form__input-label form__input-label--textbox" for="name_second">Имя:</label>
-                    <input class="form__input-source form__input-source--textbox" type="text" name="name[second]"
-                           id="name_second">
+                    <input class="form__input-source form__input-source--textbox" type="text" name="name[second]" id="name_second">
                 </li>
                 <li class="input-list__item">
                     <label class="form__input-label form__input-label--textbox" for="name_third">Имя:</label>
-                    <input class="form__input-source form__input-source--textbox" type="text" name="name[third]"
-                           id="name_third">
+                    <input class="form__input-source form__input-source--textbox" type="text" name="name[third]" id="name_third">
                 </li>
             </ul>
         </fieldset>

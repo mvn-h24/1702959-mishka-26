@@ -10,11 +10,9 @@
 @color-ui-main: #231F20;
 
 .accent(@dark: 0) {
-  @accent: hsl(
-      (hue(@color-accent) + @dark * 3),
-      (saturation(@color-accent) - @dark * 6%),
-      (lightness(@color-accent) - @dark * 5%)
-  );
+  @accent: hsl((hue(@color-accent) + @dark * 3),
+    (saturation(@color-accent) - @dark * 6%),
+    (lightness(@color-accent) - @dark * 5%));
 }
 
 .font(2xs, @weight:400, @color: @color-text-primary) {
@@ -87,6 +85,7 @@
   line-height: 30px;
   color: @color;
 }
+
 .font(child) {
   font-family: inherit;
   font-weight: inherit;

@@ -2,26 +2,30 @@
 
 .feature-asset(@counter: 0) when (@counter > 0) {
   &:nth-child(@{counter}) {
-    &::before{
+    &::before {
       content: url("/img/content/about-us--info-@{counter}.svg");
     }
   }
+
   .feature-asset(@counter - 1);
-  &::before{
+
+  &::before {
     display: inline-block;
   }
 }
 
-.about-us__header{
+.about-us__header {
   margin: 0;
-  .font(2xl);
+  .font(2 xl);
 }
+
 .about-us__features-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.about-us__feature{
+
+.about-us__feature {
   .font(m);
 
   .feature-asset(6);

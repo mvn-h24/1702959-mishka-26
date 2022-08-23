@@ -1,15 +1,17 @@
 @import "source/less/config/variables";
 @import "source/less/mixin/grid";
 
-.page-footer{
+.page-footer {
   .page-grid();
   background-color: @color-secondary;
   grid-template-rows: auto auto;
 }
-.page-footer__social-icons-list{
+
+.page-footer__social-icons-list {
   .page-grid--place-main();
 }
-.page-footer__heading-link{
+
+.page-footer__heading-link {
   display: inline-block;
   .page-grid--place-main();
   grid-row: 2/3;

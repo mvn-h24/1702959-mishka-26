@@ -1,0 +1,5 @@
+.accent(@dark: 0) {
+  @accent: hsl((hue(@color-accent) + @dark * 3),
+    (saturation(@color-accent) - @dark * 6%),
+    (lightness(@color-accent) - @dark * 5%));
+}

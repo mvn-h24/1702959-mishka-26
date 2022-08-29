@@ -1,0 +1,120 @@
+
+
+.font(2xs, @weight:400, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 13px;
+  line-height: 30px;
+  color: @color;
+}
+
+.font(xs, @weight:400, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 15px;
+  line-height: 24px;
+  color: @color;
+}
+
+.font(s, @weight:400, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 15px;
+  line-height: 30px;
+  color: @color;
+}
+
+.font(m, @weight: 700, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 17px;
+  line-height: 20px;
+  color: @color;
+}
+
+.font(xm, @weight: 700, @color: @color-text-primary) {
+  font-weight: @weight;
+  font-size: 17px;
+  line-height: 24px;
+  color: @color;
+}
+
+.font(l, @weight: 700, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 18px;
+  line-height: 20px;
+  color: @color;
+}
+
+.font(xl, @weight: 700, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 19px;
+  line-height: 24px;
+  color: @color;
+}
+
+.font(2xl, @weight: 700, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 25px;
+  line-height: 30px;
+  color: @color;
+}
+
+.font(3xl, @weight: 700, @color: @color-text-primary) {
+  font-family: @font-family;
+  font-weight: @weight;
+  font-size: 27px;
+  line-height: 30px;
+  color: @color;
+}
+
+.font-child() {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.font-child(line, @size) {
+  line-height: @size;
+}
+
+.font-child(line, inherit) {
+  line-height: inherit;
+}
+
+.font-child(size, @size) {
+  font-style: @size;
+}
+
+.font-child(size, inherit) {
+  font-style: inherit;
+}
+
+.font-child(color, @color) {
+  color: @color;
+}
+
+.font-child(color, inherit) {
+  color: inherit;
+}
+
+.font-child(family, @family) {
+  font-family: @family;
+}
+
+.font-child(family, inherit) {
+  font-family: inherit;
+}
+
+.font-child(weight, @weight) {
+  font-weight: @weight;
+}
+
+.font-child(weight, inherit) {
+  font-weight: inherit;
+}

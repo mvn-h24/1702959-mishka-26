@@ -1,0 +1,41 @@
+.product-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-preview__anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.product-preview__image {
+  display: block;
+}
+
+.product-preview__name {
+  .font(m);
+}
+
+.product-preview__props {
+  .font(2xs, @color: @color-text-content);
+}
+
+.product-preview__price {
+  .font(xs, 700);
+}
+
+.product-preview__order-key {
+  align-self: flex-start;
+
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: inline-block;
+
+  &::before {
+    content: url("../img/assets/cart.svg");
+  }
+}

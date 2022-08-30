@@ -1,0 +1,18 @@
+.page-footer {
+  .page-grid();
+  background-color: @color-secondary;
+  grid-template-rows: auto auto;
+}
+
+.page-footer__social-icons-list {
+  .page-grid--place-main();
+}
+
+.page-footer__heading-link {
+  display: inline-block;
+  .page-grid--place-main();
+  grid-row: 2/3;
+  justify-self: center;
+  .font-child(size, 19px);
+  .font-child(line, 18px);
+}

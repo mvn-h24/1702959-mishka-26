@@ -1,4 +1,5 @@
 .logo {
+  &::after,
   &::before {
     background-image: url("../img/assets/mishka-logo-mobile.svg");
     content: "";
@@ -6,4 +7,6 @@
     height: 35px;
     display: block;
   }
+  background-color: @color-main;
+  z-index: 100;
 }

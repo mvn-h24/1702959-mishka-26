@@ -9,16 +9,18 @@
 <body>
 <h1 class="access-label">Студия вязания "Мишка".</h1>
 <header class="page-header">
-    <a class="page-header__logo logo">
+    <a class="page-header__logo logo" href="#">
         <span class="access-label">Студия вязания "Мишка", промо.</span>
     </a>
     <nav class="page-header__navigation navigation">
         <h2 class="access-label">Студия вязания для пользователя.</h2>
-        <button class="navigation__toggle-burger toggle-burger" type="button">
+        <button class="navigation__toggle-burger toggle-burger toggle-burger--opened" type="button">
             <span class="access-label">Пользовательское меню, открыть.</span>
-            <span class="toggle-burger__line"></span>
+            <div class="toggle-burger__line"></div>
+            <div class="toggle-burger__line"></div>
+            <div class="toggle-burger__line"></div>
         </button>
-        <ul class="navigation__main-nav main-nav">
+        <ul class="navigation__main-nav main-nav main-nav--opened">
             <li class="main-nav__item">
                 <a class="main-nav__heading-link heading-link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -178,4 +180,11 @@
     </form>
 </div>
 </body>
+<script>
+  //header opening
+  document.querySelector('.toggle-burger').onclick = function(){
+    document.querySelector('.main-nav').classList.toggle('main-nav--opened');
+    this.classList.toggle('toggle-burger--opened');
+  }
+</script>
 </html>

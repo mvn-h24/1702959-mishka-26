@@ -1,0 +1,34 @@
+.navigation{
+  .page-grid();
+  position: relative;
+}
+.navigation__toggle-burger{
+  .page-grid--place-main();
+  align-self: center;
+  justify-self: end;
+  z-index: 100;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+  }
+}
+
+.navigation__main-nav{
+  position: absolute;
+  width: 100%;
+  animation: forwards ease-in .5s show-main-nav;
+  z-index: 90;
+  top: -320px;
+}
+
+@keyframes show-main-nav {
+  100% {
+    top: 100%;
+  }
+}

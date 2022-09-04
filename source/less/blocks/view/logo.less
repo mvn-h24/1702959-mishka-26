@@ -12,3 +12,13 @@
   }
   background-color: @color-main;
 }
+@media (min-width: 768px) {
+  .logo{
+    &::after,
+    &::before {
+      background-image: url("../img/assets/mishka-logo-tab.svg");
+      width: 114px;
+      height: 46px;
+    }
+  }
+}

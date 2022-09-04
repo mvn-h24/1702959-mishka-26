@@ -7,6 +7,33 @@
 }
 
 .catalog-nav__item {
+  &:nth-child(1) .catalog-nav__link {
+    background-color: .accent() [];
+
+    &::after{
+      width: @icon-size - 20;
+      background-size: @icon-size - 20 @icon-size;
+      background-image: url("../img/content/1-section-interior.svg");
+    }
+  }
+  &:nth-child(2) .catalog-nav__link{
+    background-color: .accent(2) [];
+    &::after{
+      background-image: url("../img/content/2-section-toys.svg");
+    }
+  }
+}
+
+.catalog-nav__link {
+  .page-grid(padding);
+  .font(xl, @color: @color-text-secondary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  min-height: 103px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
   &::after {
     content: "";
     width: @icon-size;
@@ -14,28 +41,6 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-size: @icon-size @icon-size;
+    margin-left: auto;
   }
-}
-
-.catalog-nav__item:nth-child(1) {
-  background-color: .accent() [];
-
-  &::after {
-    background-image: url("../img/content/1-section-interior.svg");
-    background-size: @icon-size - 20 @icon-size;
-    width: @icon-size - 20;
-  }
-}
-
-.catalog-nav__item:nth-child(2) {
-  background-color: .accent(2) [];
-
-  &::after {
-    background-image: url("../img/content/2-section-toys.svg");
-  }
-}
-
-.catalog-nav__link {
-  .font(xl, @color: @color-text-secondary);
-  text-decoration: none;
 }

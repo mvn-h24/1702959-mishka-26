@@ -1,8 +1,12 @@
+@grid-spacing: 30px;
+
 .page-grid() {
   display: grid;
-  grid-template-columns: 30px 1fr 30px;
+  grid-template-columns: @grid-spacing 1fr @grid-spacing;
 }
-
+.page-grid(padding) {
+  padding: 0 @grid-spacing;
+}
 .page-grid--place-column() {
   grid-column: 2/3;
 }
